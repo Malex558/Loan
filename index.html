@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Займ</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js" defer></script>
+   <script src="app.js" defer></script>
+</head>
+
+<body>
+   <!-- Header -->
+   <header class="header  " id="header">
+      <div class="container">
+         <div class="header__inner ">
+            <div class="header__inner-logo">
+               <a href="#" class="header__inner-link">
+                  <img src="img/logo.svg" alt="" class="logo_img">
+               </a>
+            </div>
+            <nav class="menu  ">
+               <ul class="menu__list">
+                  <li class="menu__list-item">
+                     <a href="#about" class="menu__list-link">О компании </a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a href="#how" class="menu__list-link"> Как получить деньги </a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a href="#now" class="menu__list-link"> Как погасить заём </a>
+                  </li>
+                  <li class="menu__list-item">
+                     <a href="#quest" class="menu__list-link"> Зарплата вперед</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="nav__togle  " id="nav__togle">
+               <span class="nav__togle__item"></span>
+            </div>
+            <div class="header__inner-sign">
+               <a href="#" class="sign-link">
+                  <button class="sign-btn">
+                     <img src="img/sign.svg" alt="" class="sign-img">
+                     <p class="sign-text">Войти</p>
+                  </button>
+               </a>
+            </div>
+         </div>
+   </header>
+   <main class="main" id="main">
+      <div class="info">
+         <div class="container">
+            <div class="main__inner">
+               <div class="main__inner-desc">
+                  <div class="main__inner-info">
+                     <h1 class="main__inner-info--title">ZERO — <br>
+                        значит <b>0!</b></h1>
+                     <h3 class="main__inner-info--subtitle">Первый заём с промокодом <br>
+                        "ZERO" - бесплатно! *</h3>
+                     <br>
+                     <p class="main__inner-info-text">
+                        (активируйте промокод в Вашем <br>
+                        Личном кабинете)</p>
+                  </div>
+               </div>
+               <div class="main__inner-input">
+                  <form action="#" class="form">
+                     <div class="form__content">
+                        <div class="form__btns">
+                           <button class="form__btn active form__btn--first " type="button">Первый заём</button>
+                           <button class="form__btn form__btn--second" type="button">Повторный заём</button>
+                        </div>
+                        <p class="legend--first">
+                           Сумма
+                        </p>
+                        <div class="slider">
+                           <form action="" class="form">
+                              <input type="number" class="form-control" name="input_text1" id="input_text1" min="1000"
+                                 max="30000" step="1000" onchange="rangeinput1.value = input_text1.value"
+                                 placeholder=" 5000 рублей" />
+                              <input type="range" oninput="input_text1.value = rangeinput1.value"
+                                 class="form-control-range slider" type="range" min="1000" max="30000" value="5000"
+                                 id="rangeinput1" step="1000" onchange="input_text1.value = rangeinput1.value" />
+
+                           </form>
+
+                        </div>
+                        <p class="legend--first">
+                           На срок
+                        </p>
+                        <div class="slider">
+                           <input type="number" class="form-control" name="input_text2" id="input_text2" min="7"
+                              max="30" step="1" onchange="rangeinput2.value = input_text2.value"
+                              placeholder=" 10 дней" />
+                           <input type="range" oninput="input_text2.value = rangeinput2.value"
+                              class="form-control-range slider" type="range" min="7" max="30" value="10"
+                              id="rangeinput2" step="1" onchange="input_text2.value = rangeinput2.value" />
+
+                        </div>
+                        <div class="form__text">
+                           <!-- <input type="number" name="" id="number" readonly>
+                           <input type="date" name="" id="date" readonly>
+                           <input type="number" name="" id="number2" readonly> -->
+                           <div class="form__desc">
+                              <h3 class="form__desc-title">Вы берете</h3>
+                              <p class="form__desc-text">5000 руб.</p>
+                           </div>
+                           <div class="form__desc">
+                              <h3 class="form__desc-title">срок погашения</h3>
+                              <p class="form__desc-text">11 декабря, 2020</p>
+                           </div>
+                           <div class="form__desc">
+                              <h3 class="form__desc-title">Сумма к возврату</h3>
+                              <p class="form__desc-text "><b>5000 руб.</b></p>
+                           </div>
+                        </div>
+                        <a href="#" class="form__link">
+                           <button class="form__link--btn">Подать заявку</button>
+                        </a>
+                        <a href="#" class="polit__text">Как не допустить просроченный задолженности <br> Требования к
+                           заемщикам</a>
+                        <p class="cond__text">Расчет носит ознакомительный характер<br>
+                           Окончательные условия будут определены при подаче заявки в ЛК</p>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="advantages" id="about">
+         <div class="container">
+            <div class="advantsges__inner">
+               <h1 class="head__title">Наши преимущества</h1>
+               <div class="advantages__inner-info">
+                  <div class="advantages__inner-pers">
+                     <img src="img/check.svg" alt="" class="advantages__inner-pers--img">
+                     <p class="advantages__inner-pers--text"><span>90%</span><br>одобрения</p>
+                     <a href="" class="advantages__inner-pers--link">
+                        <button class="advantages__inner-pers--btn">подать заявку</button>
+                     </a>
+                  </div>
+                  <div class="advantages__inner-cards">
+                     <div class="advantages__inner-card">
+                        <img src="img/card-1.svg" alt="" class="advantages__inner-card--img">
+                        <p class="advantages__inner-card--text">Деньги за 1 минуту<br>
+                           после одобрения</p>
+                     </div>
+                     <div class="advantages__inner-card">
+                        <img src="img/card-2.svg" alt="" class="advantages__inner-card--img">
+                        <p class="advantages__inner-card--text">Продление<br>
+                           без штрафов</p>
+                     </div>
+                     <div class="advantages__inner-card">
+                        <img src="img/card-3.svg" alt="" class="advantages__inner-card--img">
+                        <p class="advantages__inner-card--text">Безопасность<br>
+                           персональных данных</p>
+                     </div>
+                     <div class="advantages__inner-card">
+                        <img src="img/card-4.svg" alt="" class="advantages__inner-card--img">
+                        <p class="advantages__inner-card--text">Погашение займа 24 часа<br>
+                           Без комиссии</p>
+                     </div>
+                     <div class="advantages__inner-card">
+                        <img src="img/card-5.svg" alt="" class="advantages__inner-card--img">
+                        <p class="advantages__inner-card--text">Премиум услуги<br>
+                           для постоянных клиентов</p>
+                     </div>
+                     <div class="advantages__inner-card">
+                        <img src="img/card-6.svg" alt="" class="advantages__inner-card--img">
+                        <p class="advantages__inner-card--text">Улучшение<br>
+                           кредитной истории</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="easy" id="how">
+         <div class="container">
+            <div class="easy__inner">
+               <h1 class="head__title">Получите заём просто</h1>
+               <div class="easy__inner-info">
+                  <img src="img/hand 2.png" alt="" class="hand">
+                  <ul class="easy__inner-list">
+                     <li class="easy__inner-list--item">
+                        <img src="img/Line.svg" alt="">
+                        <span>1</span>
+                        <h4 class="easy__inner-list--title">Позвоните или оставьте заявку</h4>
+                        <p class="easy__inner-list--text">Оставить заявку можно <a href="#">заполнив форму</a> на сайте
+                        </p>
+                     </li>
+                     <li class="easy__inner-list--item">
+                        <img class="line-2" src="img/Line.svg" alt="">
+                        <span>2</span>
+                        <h4 class="easy__inner-list--title">Дождитесь принятия решения</h4>
+                        <p class="easy__inner-list--text">Решение принимается всего за 1 минуту</p>
+                     </li>
+                     <li class="easy__inner-list--item">
+
+                        <span>3</span>
+                        <h4 class="easy__inner-list--title">Получите деньги</h4>
+                        <p class="easy__inner-list--text">Мы переведем Вам деньги на карту</p>
+                     </li>
+                  </ul>
+                  <a href="#" class="easy__inner-link">
+                     <button class="easy__inner-btn">оформить заявку</button>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="how" id="now">
+         <div class="container">
+            <div class="how__inner">
+               <h1 class="head__title">Как погасить заём</h1>
+               <div class="how__inner-info">
+                  <div class="how__inner-info--content">
+                     <p class="how__inner-info--text">Способ погашения</p>
+                     <p class="how__inner-info--text">Зачисление</p>
+                  </div>
+                  <div class="how__inner-info--cards">
+                     <div class="how__inner-info--card">
+                        <img src="img/how-1.jpeg" alt="" class="how__inner-info--img">
+                        <h4 class="how__inner-info--title">Банковской картой<br>
+                           Visa/MasterCard/Мир<br>
+                           в личном кабинете</h4>
+                        <div class="how__inner-info--third">
+                           <img src="img/clock-1.svg" alt="" class="how__inner-img">
+                           <p class="how__inner-text">Моментально</p>
+                        </div>
+                        <a href="#" class="how__inner-info--link">
+                           <button class="how__inner-info--btn how__inner-info--btn--active ">Погасить</button>
+                        </a>
+                     </div>
+                     <div class="how__inner-info--card">
+                        <img src="img/how-2.jpeg" alt="" class="how__inner-info--img">
+                        <h4 class="how__inner-info--title">Через терминалы Qiwi</h4>
+                        <div class="how__inner-info--third">
+                           <img src="img/clock-2.svg" alt="" class="how__inner-img">
+                           <p class="how__inner-text">Моментально</p>
+                        </div>
+                        <a href="#" class="how__inner-info--link">
+                           <button class="how__inner-info--btn">Скоро</button>
+                        </a>
+                     </div>
+                     <div class="how__inner-info--card">
+                        <img src="img/how-3.jpeg" alt="" class="how__inner-info--img">
+                        <h4 class="how__inner-info--title">Через терминалы CyberPlat</h4>
+                        <div class="how__inner-info--third">
+                           <img src="img/clock-2.svg" alt="" class="how__inner-img">
+                           <p class="how__inner-text">Моментально</p>
+                        </div>
+                        <a href="#" class="how__inner-info--link">
+                           <button class="how__inner-info--btn">Скоро</button>
+                        </a>
+                     </div>
+                     <div class="how__inner-info--card">
+                        <img src="img/how-4.jpeg" alt="" class="how__inner-info--img">
+                        <h4 class="how__inner-info--title">Через платежную систему<br>
+                           "Золотая корона"</h4>
+                        <div class="how__inner-info--third">
+                           <img src="img/clock-2.svg" alt="" class="how__inner-img">
+                           <p class="how__inner-text">Моментально</p>
+                        </div>
+                        <a href="#" class="how__inner-info--link">
+                           <button class="how__inner-info--btn">Скоро</button>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="now" id="quest">
+         <div class="container">
+            <div class="now__inner">
+               <h1 class="head__title">Получить заём прямо сейчас</h1>
+               <div class="now__inner-content">
+                  <img src="img/hand3.png" alt="" class="now__inner-content--img">
+                  <form action="#" class="now__inner-content--form form">
+                     <div class="form__content form__content-now">
+                        <p class="legend--first legend--first-now">
+                           Необходимая сумма
+                        </p>
+                        <div class="slider">
+                           
+                              <input type="number" class="form-control" name="input_text1" id="input_text1" min="1000"
+                                 max="30000" step="1000" onchange="rangeinput1.value = input_text1.value"
+                                 placeholder=" 5000 рублей" />
+                              <input type="range" oninput="input_text1.value = rangeinput1.value"
+                                 class="form-control-range slider" type="range" min="1000" max="30000" value="5000"
+                                 id="rangeinput1" step="1000" onchange="input_text1.value = rangeinput1.value" />
+                              <div class="outputs">
+                                 <output for="rangeinput1" class="output">1 000 </output>
+                                 <output for="rangeinput1" class="output">30 000 </output>
+                              </div>
+                           </form>
+
+                        </div>
+                        <p class="legend--first legend--first-now">
+                           На какой срок
+                        </p>
+                        <div class="slider">
+                           <input type="number" class="form-control" name="input_text2" id="input_text2" min="7"
+                              max="30" step="1" onchange="rangeinput2.value = input_text2.value"
+                              placeholder=" 10 дней" />
+                           <input type="range" oninput="input_text2.value = rangeinput2.value"
+                              class="form-control-range slider" type="range" min="7" max="30" value="10"
+                              id="rangeinput2" step="1" onchange="input_text2.value = rangeinput2.value" />
+                           <div class="outputs">
+                              <output for="rangeinput1" class="output">7 </output>
+                              <output for="rangeinput1" class="output">30 </output>
+                           </div>
+                        </div>
+                        <div class="form__text form__text-now">
+
+                           <div class="form__desc">
+                              <h3 class="form__desc-title">Дата возврата</h3>
+                              <p class="form__desc-text">11 декабря, 2020</p>
+                           </div>
+                           <div class="form__desc">
+                              <h3 class="form__desc-title">Сумма к возврату</h3>
+                              <p class="form__desc-text "><b>5000 руб.</b></p>
+                           </div>
+                        </div>
+                        <a href="#" class="form__link form__link-now">
+                           <button class="form__link--btn form__link--btn-now">получить деньги</button>
+                        </a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="quest">
+         <div class="container">
+            <div class="quest__inner">
+               <h1 class="head__title">Часто задаваемые вопросы</h1>
+               <div class="accordion">
+                  <div class="accordion__inner">
+                     <ul class="accordion__inner-list">
+                        <li class="accordion__inner-item">
+                           <div class="accordion__title">
+                              <h1>Как мне оформить микрозайм</h1>
+                              <img src="img/plus.svg" alt="">
+                           </div>
+                           <div class="accordion__content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                 nostrud
+                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                        </li>
+                        <li class="accordion__inner-item">
+                           <div class="accordion__title">
+                              <h1>Как мне оформить микрозайм</h1>
+                              <img src="img/plus.svg" alt="">
+                           </div>
+                           <div class="accordion__content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                 nostrud
+                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                        </li>
+                        <li class="accordion__inner-item">
+                           <div class="accordion__title">
+                              <h1>Как мне оформить микрозайм</h1>
+                              <img src="img/plus.svg" alt="">
+                           </div>
+                           <div class="accordion__content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                 nostrud
+                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                        </li>
+                        <li class="accordion__inner-item">
+                           <div class="accordion__title">
+                              <h1>Как мне оформить микрозайм</h1>
+                              <img src="img/plus.svg" alt="">
+                           </div>
+                           <div class="accordion__content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                 nostrud
+                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                        </li>
+                     </ul>
+                     <ul class="accordion__inner-list">
+                        <li class="accordion__inner-item">
+                           <div class="accordion__title">
+                              <h1>Как мне оформить микрозайм</h1>
+                              <img src="img/plus.svg" alt="">
+                           </div>
+                           <div class="accordion__content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                 nostrud
+                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                        </li>
+                        <li class="accordion__inner-item">
+                           <div class="accordion__title">
+                              <h1>Как мне оформить микрозайм</h1>
+                              <img src="img/plus.svg" alt="">
+                           </div>
+                           <div class="accordion__content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                 nostrud
+                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                        </li>
+                        <li class="accordion__inner-item">
+                           <div class="accordion__title">
+                              <h1>Как мне оформить микрозайм</h1>
+                              <img src="img/plus.svg" alt="">
+                           </div>
+                           <div class="accordion__content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                 nostrud
+                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                        </li>
+                        <li class="accordion__inner-item">
+                           <div class="accordion__title">
+                              <h1>Как мне оформить микрозайм</h1>
+                              <img src="img/plus.svg" alt="">
+                           </div>
+                           <div class="accordion__content">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                 nostrud
+                                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="public">
+         <div class="container">
+            <div class="public__inner">
+               <h1 class="head__title">Публикации</h1>
+               <div class="public__inner-content">
+                  <div class="public__inner-card">
+                     <h3 class="public__inner-content--title">Зарплата вперед - новый
+                        сервис от Platiza.ru</h3>
+                     <p class="public__inner-text">МКК Платиза ООО объявляет о запуске нового сервиса Зарплата вперед и
+                        продукта Зарплатный </p>
+                     <a href="#" class="public__inner-link">platiza.ru</a>
+                  </div>
+                  <div class="public__inner-card">
+                     <h3 class="public__inner-content--title">Зарплата вперед - новый
+                        сервис от Platiza.ru</h3>
+                     <p class="public__inner-text">МКК Платиза ООО объявляет о запуске нового сервиса Зарплата вперед и
+                        продукта Зарплатный </p>
+                     <a href="#" class="public__inner-link">platiza.ru</a>
+                  </div>
+                  <div class="public__inner-card">
+                     <h3 class="public__inner-content--title">Зарплата вперед - новый
+                        сервис от Platiza.ru</h3>
+                     <p class="public__inner-text">МКК Платиза ООО объявляет о запуске нового сервиса Зарплата вперед и
+                        продукта Зарплатный </p>
+                     <a href="#" class="public__inner-link">platiza.ru</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="auto">
+         <div class="container">
+            <div class="auto__inner">
+               <h1 class="head__title">Какие у нас займы</h1>
+               <div class="auto__inner-content">
+                  <div class="auto__inner-card">
+                     <img src="img/auto-1.svg" alt="" class="auto__inner-img">
+                     <h3 class="auto__inner-content--title">Займ до 200 000 тенге</h3>
+                  </div>
+                  <div class="auto__inner-card">
+                     <img src="img/auto-2.svg" alt="" class="auto__inner-img">
+                     <h3 class="auto__inner-content--title">Автозайм</h3>
+                  </div>
+                  <div class="auto__inner-card">
+                     <img src="img/auto-3.svg" alt="" class="auto__inner-img">
+                     <h3 class="auto__inner-content--title">Под залог недвижимости</h3>
+                  </div>
+               </div>
+               <p class="auto__inner-text">Platiza — это популярный российский онлайн-сервис мгновенной финансовой
+                  помощи. Здесь можно за минуту получить
+                  заём на небольшую сумму без похода в офис, справок с работы, имея под рукой только паспорт и телефон.
+                  <br>
+                  <br>
+                  Мы предоставляем надёжное и безопасное решение людям, оказавшимся в экстренных финансовых ситуациях.
+                  Внедряя эффективные технологии, мы создали сервис, который стал персональным финансовым помощником
+                  для всех наших клиентов.
+
+               </p>
+            </div>
+         </div>
+      </div>
+   </main>
+   <footer class="footer">
+      <div class="copyright">
+         <div class="container">
+            <div class="copyright__inner">
+               <p class="copyright__text">© 2011–2020 Микрокредитная компания «Платиза.ру» <br>
+                  (общество с ограниченной ответственностью). <br>
+                  Все права защищены.</p>
+            </div>
+         </div>
+      </div>
+   </footer>
+</body>
+
+</html>
